@@ -1,0 +1,150 @@
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.feat {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 1em;
+    background: linear-gradient(to bottom, #2b3e50 0%,#2a444f 50%,#29464c 100%);
+}
+
+.icon {
+    background: url(assets/standard_rgba_atlas.png) no-repeat;
+    background-size: 450px 950px;
+    background-position: -279px -574px;
+}
+
+.icon.currency-GRIND            { background-position: -280px -829px; }
+.icon.currency-PREMIUM          { background-position: -165px -707px; }
+.icon.currency-SEASONS_CURRENCY { background-position: -208px -829px; }
+.icon.seasonpoint               { background-position: -114px -574px; }
+
+.icon.currency-TERRITORY_BATTLE_CURRENCY {
+    background: url(assets/tex.icon_territory_credit.png);
+    background-size: 50px 50px;
+    background-position: 0 0;
+}
+
+.material img {
+    width: 50px;
+}
+
+.rewards {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.reward {
+    font-size: 14px;
+    margin: 0.25em;
+    /* background: linear-gradient(to bottom, #2b3e50 0%,#343f47 50%,#285054 100%); */
+    padding: 0.5em;
+}
+
+.labels .name {
+    font-size: 18px;
+    color: #fff;
+    text-shadow: 0 1px 1px #000;
+}
+
+.labels .desc {
+    font-size: 16px;
+    color: #fc0;
+    text-shadow: 0 1px 1px #000;
+}
+
+.reward > div {
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+}
+
+.gear.gear-tier-1::before {
+    background-position: -50px -144px;
+}
+
+.gear.gear-tier-2::before,
+.gear.gear-tier-3::before {
+    background-position: -100px -144px;
+}
+
+.gear.gear-tier-4::before,
+.gear.gear-tier-5::before,
+.gear.gear-tier-6::before {
+    background-position: -150px -144px;
+}
+
+.gear.gear-tier-7::before,
+.gear.gear-tier-8::before,
+.gear.gear-tier-9::before,
+.gear.gear-tier-10::before {
+    background-position: -200px -144px;
+}
+
+.gear.gear-tier-11::before {
+    background-position: -250px -144px;
+}
+
+.gear.gear-tier-12:before,
+.gear.gear-tier-13:before {
+    background-position: -300px -144px;
+}
+
+.gear::before {
+    display: block;
+    content: "";
+    background: url(assets/gear-atlas.png) no-repeat;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.gear-tier-1 .gear-icon-inner { background: radial-gradient(#4391a3,#000 80%); }
+.gear-tier-2 .gear-icon-inner { background: radial-gradient(#4c9601,#000 80%); }
+.gear-tier-3 .gear-icon-inner { background: radial-gradient(#4c9601,#000 80%); }
+.gear-tier-4 .gear-icon-inner { background: radial-gradient(#004b65,#000 80%); }
+.gear-tier-5 .gear-icon-inner { background: radial-gradient(#004b65,#000 80%); }
+.gear-tier-6 .gear-icon-inner { background: radial-gradient(#004b65,#000 80%); }
+.gear-tier-7 .gear-icon-inner { background: radial-gradient(#4700a7,#000 80%); }
+.gear-tier-8 .gear-icon-inner { background: radial-gradient(#4700a7,#000 80%); }
+.gear-tier-9 .gear-icon-inner { background: radial-gradient(#4700a7,#000 80%); }
+.gear-tier-10 .gear-icon-inner { background: radial-gradient(#4700a7,#000 80%); }
+.gear-tier-11 .gear-icon-inner { background: radial-gradient(#4700a7,#000 80%); }
+.gear-tier-12 .gear-icon-inner { background: radial-gradient(#997300,#000 80%); }
+.gear-tier-13 .gear-icon-inner { background: radial-gradient(#997300,#000 80%); }
+
+.gear-icon-inner {
+    display: block;
+    border-radius: 13px 0;
+    overflow: hidden;
+}
+
+.gear img {
+    width: 50px;
+    height: 50px;
+}
+
+.gear .gear-mk {
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    color: #fff;
+    z-index: 3;
+    font-size: 8px;
+    text-shadow: 0 2px 2px #000;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 3px 3px 0;
+    line-height: 1;
+}
+
+.icon img {
+    width: 50px;
+    height: 50px;
+}
